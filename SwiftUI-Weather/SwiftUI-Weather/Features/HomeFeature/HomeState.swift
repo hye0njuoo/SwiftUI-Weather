@@ -10,5 +10,10 @@ import Foundation
 // 도메인 + 상태
 struct HomeState: Equatable {
     var greeting: String = "여기는 홈 탭"
+    var location: String = "Seongnam-si"
+    var temparature: Int = 21
+    var weather: String = "Partly Cloudy"
+    var high: Int = 29
+    var low: Int = 15
 }
 
