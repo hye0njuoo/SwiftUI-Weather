@@ -13,15 +13,36 @@ struct HomeView: View {
 
     var body: some View {
         WithViewStore(self.store, observe: { $0 }) { viewStore in
-            VStack {
-                Text(viewStore.greeting)
-                    .font(.title)
-                    .padding()
+            ZStack {
+                Image("SeoulBG")
+                    .resizable()
+                    .edgesIgnoringSafeArea(.all)
+                ScrollView{
+                    Text(viewStore.location)
+                        .font(.system(size: 37))
+                        .foregroundStyle(.white)
+                        .padding(.top, 34)
 
-                Button("Tap me!") {
-                    viewStore.send(.greetingButtonTapped) // 버튼 클릭 시 액션 전송
+                    Text(" \(viewStore.temparature)°")
+                        .font(.system(size: 102))
+                        .fontWeight(.thin)
+                        .foregroundStyle(.white)
+
+                    Text(viewStore.weather)
+                        .font(.system(size: 24))
+                        .foregroundStyle(.white)
+
+                    HStack(spacing: 12, content: {
+                        Text("H:\(viewStore.high)°")
+                            .font(.system(size: 21))
+                            .fontWeight(.medium)
+                            .foregroundStyle(.white)
+                        Text("L:\(viewStore.low)°")
+                            .font(.system(size: 21))
+                            .fontWeight(.medium)
+                            .foregroundStyle(.white)
+                    })
                 }
-                .padding()
             }
         }
     }
