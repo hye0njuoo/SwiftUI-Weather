@@ -9,6 +9,6 @@ import Foundation
 
 // 도메인 + 액션
 enum HomeAction: Equatable {
-    case greetingButtonTapped
+    case hourlyForecast(HourlyForecastReducer.Action)
 }
 
