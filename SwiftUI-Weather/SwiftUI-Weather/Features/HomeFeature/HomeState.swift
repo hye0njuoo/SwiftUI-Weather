@@ -15,5 +15,6 @@ struct HomeState: Equatable {
     var weather: String = "Partly Cloudy"
     var high: Int = 29
     var low: Int = 15
+    var hourlyForecast: HourlyForecastReducer.State = HourlyForecastReducer.State()
 }
 

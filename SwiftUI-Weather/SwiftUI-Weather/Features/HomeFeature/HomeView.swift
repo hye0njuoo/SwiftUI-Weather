@@ -17,36 +17,45 @@ struct HomeView: View {
                 Image("SeoulBG")
                     .resizable()
                     .edgesIgnoringSafeArea(.all)
-                ScrollView{
-                    Text(viewStore.location)
-                        .font(.system(size: 37))
-                        .foregroundStyle(.white)
-                        .padding(.top, 34)
-
-                    Text(" \(viewStore.temparature)°")
-                        .font(.system(size: 102))
-                        .fontWeight(.thin)
-                        .foregroundStyle(.white)
-
-                    Text(viewStore.weather)
-                        .font(.system(size: 24))
-                        .foregroundStyle(.white)
-
-                    HStack(spacing: 12, content: {
-                        Text("H:\(viewStore.high)°")
-                            .font(.system(size: 21))
-                            .fontWeight(.medium)
+                ScrollView {
+                    VStack {
+                        Text(viewStore.location)
+                            .font(.system(size: 37))
                             .foregroundStyle(.white)
-                        Text("L:\(viewStore.low)°")
-                            .font(.system(size: 21))
-                            .fontWeight(.medium)
+                            .padding(.top, 34)
+
+                        Text(" \(viewStore.temparature)°")
+                            .font(.system(size: 102))
+                            .fontWeight(.thin)
                             .foregroundStyle(.white)
-                    })
+
+                        Text(viewStore.weather)
+                            .font(.system(size: 24))
+                            .foregroundStyle(.white)
+
+                        HStack(spacing: 12) {
+                            Text("H:\(viewStore.high)°")
+                                .font(.system(size: 21))
+                                .fontWeight(.medium)
+                                .foregroundStyle(.white)
+                            Text("L:\(viewStore.low)°")
+                                .font(.system(size: 21))
+                                .fontWeight(.medium)
+                                .foregroundStyle(.white)
+                        }
+
+                        HourlyForecastView(store: store.scope(state: \.hourlyForecast, action: HomeReducer.Action.hourlyForecast))
+                            .padding(.top, 20)
+                    }
                 }
+            }
+            .onAppear {
+                viewStore.send(.hourlyForecast(.loadForecasts))
             }
         }
     }
 }
+
 #Preview {
     HomeView(store: Store(initialState: HomeReducer.State(), reducer: {
         HomeReducer()
