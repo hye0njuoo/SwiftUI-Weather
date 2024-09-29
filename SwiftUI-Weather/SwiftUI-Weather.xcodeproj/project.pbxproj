@@ -12,6 +12,21 @@
 		E59A278A2CA91E960050359C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E59A27892CA91E960050359C /* Assets.xcassets */; };
 		E59A278D2CA91E960050359C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E59A278C2CA91E960050359C /* Preview Assets.xcassets */; };
 		E59A279C2CA923BC0050359C /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = E59A279B2CA923BC0050359C /* ComposableArchitecture */; };
+		E59A279E2CA924EC0050359C /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59A279D2CA924EC0050359C /* AppState.swift */; };
+		E59A27A02CA9250A0050359C /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59A279F2CA9250A0050359C /* AppReducer.swift */; };
+		E59A27A22CA9251B0050359C /* AppAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59A27A12CA9251B0050359C /* AppAction.swift */; };
+		E59A27A42CA925920050359C /* HomeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59A27A32CA925920050359C /* HomeState.swift */; };
+		E59A27A62CA9259D0050359C /* HomeAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59A27A52CA9259D0050359C /* HomeAction.swift */; };
+		E59A27A82CA925AC0050359C /* HomeReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59A27A72CA925AC0050359C /* HomeReducer.swift */; };
+		E59A27AA2CA925B60050359C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59A27A92CA925B60050359C /* HomeView.swift */; };
+		E59A27AC2CA92FB30050359C /* ListState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59A27AB2CA92FB30050359C /* ListState.swift */; };
+		E59A27AE2CA92FBB0050359C /* ListAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59A27AD2CA92FBB0050359C /* ListAction.swift */; };
+		E59A27B02CA92FC50050359C /* ListReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59A27AF2CA92FC50050359C /* ListReducer.swift */; };
+		E59A27B22CA92FCC0050359C /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59A27B12CA92FCC0050359C /* ListView.swift */; };
+		E59A27B42CA933620050359C /* MapState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59A27B32CA933620050359C /* MapState.swift */; };
+		E59A27B62CA933770050359C /* MapAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59A27B52CA933770050359C /* MapAction.swift */; };
+		E59A27B82CA933880050359C /* MapReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59A27B72CA933880050359C /* MapReducer.swift */; };
+		E59A27BA2CA933920050359C /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59A27B92CA933920050359C /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +35,21 @@
 		E59A27872CA91E940050359C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E59A27892CA91E960050359C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E59A278C2CA91E960050359C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E59A279D2CA924EC0050359C /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		E59A279F2CA9250A0050359C /* AppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
+		E59A27A12CA9251B0050359C /* AppAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAction.swift; sourceTree = "<group>"; };
+		E59A27A32CA925920050359C /* HomeState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeState.swift; sourceTree = "<group>"; };
+		E59A27A52CA9259D0050359C /* HomeAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAction.swift; sourceTree = "<group>"; };
+		E59A27A72CA925AC0050359C /* HomeReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeReducer.swift; sourceTree = "<group>"; };
+		E59A27A92CA925B60050359C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		E59A27AB2CA92FB30050359C /* ListState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListState.swift; sourceTree = "<group>"; };
+		E59A27AD2CA92FBB0050359C /* ListAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListAction.swift; sourceTree = "<group>"; };
+		E59A27AF2CA92FC50050359C /* ListReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListReducer.swift; sourceTree = "<group>"; };
+		E59A27B12CA92FCC0050359C /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		E59A27B32CA933620050359C /* MapState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapState.swift; sourceTree = "<group>"; };
+		E59A27B52CA933770050359C /* MapAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAction.swift; sourceTree = "<group>"; };
+		E59A27B72CA933880050359C /* MapReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapReducer.swift; sourceTree = "<group>"; };
+		E59A27B92CA933920050359C /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +104,9 @@
 			children = (
 				E59A27852CA91E940050359C /* SwiftUI_WeatherApp.swift */,
 				E59A27872CA91E940050359C /* ContentView.swift */,
+				E59A279D2CA924EC0050359C /* AppState.swift */,
+				E59A279F2CA9250A0050359C /* AppReducer.swift */,
+				E59A27A12CA9251B0050359C /* AppAction.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -91,6 +124,10 @@
 		E59A27962CA91EFB0050359C /* MapFeature */ = {
 			isa = PBXGroup;
 			children = (
+				E59A27B32CA933620050359C /* MapState.swift */,
+				E59A27B52CA933770050359C /* MapAction.swift */,
+				E59A27B72CA933880050359C /* MapReducer.swift */,
+				E59A27B92CA933920050359C /* MapView.swift */,
 			);
 			path = MapFeature;
 			sourceTree = "<group>";
@@ -98,6 +135,10 @@
 		E59A27972CA91F060050359C /* HomeFeature */ = {
 			isa = PBXGroup;
 			children = (
+				E59A27A32CA925920050359C /* HomeState.swift */,
+				E59A27A52CA9259D0050359C /* HomeAction.swift */,
+				E59A27A72CA925AC0050359C /* HomeReducer.swift */,
+				E59A27A92CA925B60050359C /* HomeView.swift */,
 			);
 			path = HomeFeature;
 			sourceTree = "<group>";
@@ -105,6 +146,10 @@
 		E59A27982CA91F160050359C /* ListFeature */ = {
 			isa = PBXGroup;
 			children = (
+				E59A27AB2CA92FB30050359C /* ListState.swift */,
+				E59A27AD2CA92FBB0050359C /* ListAction.swift */,
+				E59A27AF2CA92FC50050359C /* ListReducer.swift */,
+				E59A27B12CA92FCC0050359C /* ListView.swift */,
 			);
 			path = ListFeature;
 			sourceTree = "<group>";
@@ -193,8 +238,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E59A27AA2CA925B60050359C /* HomeView.swift in Sources */,
+				E59A27B22CA92FCC0050359C /* ListView.swift in Sources */,
+				E59A27B62CA933770050359C /* MapAction.swift in Sources */,
+				E59A27B82CA933880050359C /* MapReducer.swift in Sources */,
+				E59A279E2CA924EC0050359C /* AppState.swift in Sources */,
 				E59A27882CA91E940050359C /* ContentView.swift in Sources */,
+				E59A27A22CA9251B0050359C /* AppAction.swift in Sources */,
+				E59A27A62CA9259D0050359C /* HomeAction.swift in Sources */,
+				E59A27B42CA933620050359C /* MapState.swift in Sources */,
+				E59A27BA2CA933920050359C /* MapView.swift in Sources */,
+				E59A27A02CA9250A0050359C /* AppReducer.swift in Sources */,
+				E59A27B02CA92FC50050359C /* ListReducer.swift in Sources */,
+				E59A27A42CA925920050359C /* HomeState.swift in Sources */,
+				E59A27AC2CA92FB30050359C /* ListState.swift in Sources */,
 				E59A27862CA91E940050359C /* SwiftUI_WeatherApp.swift in Sources */,
+				E59A27A82CA925AC0050359C /* HomeReducer.swift in Sources */,
+				E59A27AE2CA92FBB0050359C /* ListAction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
