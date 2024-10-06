@@ -10,5 +10,6 @@ import Foundation
 // 도메인 + 액션
 enum HomeAction: Equatable {
     case hourlyForecast(HourlyForecastReducer.Action)
+    case tenDayForecast(TenDayForecastReducer.Action)
 }
 
