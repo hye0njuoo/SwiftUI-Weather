@@ -46,11 +46,15 @@ struct HomeView: View {
 
                         HourlyForecastView(store: store.scope(state: \.hourlyForecast, action: HomeReducer.Action.hourlyForecast))
                             .padding(.top, 20)
+
+                        TenDayForecastView(store: store.scope(state: \.tenDayForecast, action: HomeAction.tenDayForecast))
+                            .padding(.top, 20)
                     }
                 }
             }
             .onAppear {
                 viewStore.send(.hourlyForecast(.loadForecasts))
+                viewStore.send(.tenDayForecast(.loadForecasts))
             }
         }
     }
