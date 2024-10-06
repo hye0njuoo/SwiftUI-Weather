@@ -13,6 +13,11 @@ struct HomeReducer: Reducer {
         case .hourlyForecast(let action):
             return HourlyForecastReducer().reduce(into: &state.hourlyForecast, action: action)
                 .map(Action.hourlyForecast)
+
+        case .tenDayForecast(let action):
+                   return TenDayForecastReducer().reduce(into: &state.tenDayForecast, action: action)
+                       .map(HomeAction.tenDayForecast) 
+
         }
     }
 }

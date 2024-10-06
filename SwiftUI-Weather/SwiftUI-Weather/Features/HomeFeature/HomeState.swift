@@ -16,5 +16,6 @@ struct HomeState: Equatable {
     var high: Int = 29
     var low: Int = 15
     var hourlyForecast: HourlyForecastReducer.State = HourlyForecastReducer.State()
+    var tenDayForecast: TenDayForecastState = TenDayForecastState()
 }
 
