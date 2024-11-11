@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E542A8592CE1E8CD00A3F83E /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = E542A8582CE1E8CD00A3F83E /* ComposableArchitecture */; };
+		E542A85C2CE1EC8A00A3F83E /* TenDayForecastAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E542A85B2CE1EC8A00A3F83E /* TenDayForecastAPI.swift */; };
+		E542A85F2CE1ECD800A3F83E /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = E542A85E2CE1ECD800A3F83E /* CombineMoya */; };
+		E542A8612CE1ECD800A3F83E /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = E542A8602CE1ECD800A3F83E /* Moya */; };
+		E542A8632CE1ECD800A3F83E /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = E542A8622CE1ECD800A3F83E /* ReactiveMoya */; };
+		E542A8652CE1ECD800A3F83E /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = E542A8642CE1ECD800A3F83E /* RxMoya */; };
+		E542A8672CE1ED7600A3F83E /* TenDayForecastResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E542A8662CE1ED7600A3F83E /* TenDayForecastResponse.swift */; };
 		E5863F902CA9926E0092D6C1 /* TabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5863F8F2CA9926E0092D6C1 /* TabbarView.swift */; };
 		E5863F932CA994960092D6C1 /* HourlyForecastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5863F922CA994960092D6C1 /* HourlyForecastView.swift */; };
 		E5863F952CA994AC0092D6C1 /* HourlyForecastReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5863F942CA994AC0092D6C1 /* HourlyForecastReducer.swift */; };
@@ -16,7 +23,6 @@
 		E59A27882CA91E940050359C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59A27872CA91E940050359C /* ContentView.swift */; };
 		E59A278A2CA91E960050359C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E59A27892CA91E960050359C /* Assets.xcassets */; };
 		E59A278D2CA91E960050359C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E59A278C2CA91E960050359C /* Preview Assets.xcassets */; };
-		E59A279C2CA923BC0050359C /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = E59A279B2CA923BC0050359C /* ComposableArchitecture */; };
 		E59A279E2CA924EC0050359C /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59A279D2CA924EC0050359C /* AppState.swift */; };
 		E59A27A02CA9250A0050359C /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59A279F2CA9250A0050359C /* AppReducer.swift */; };
 		E59A27A22CA9251B0050359C /* AppAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59A27A12CA9251B0050359C /* AppAction.swift */; };
@@ -35,6 +41,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E542A85B2CE1EC8A00A3F83E /* TenDayForecastAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TenDayForecastAPI.swift; sourceTree = "<group>"; };
+		E542A8662CE1ED7600A3F83E /* TenDayForecastResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TenDayForecastResponse.swift; sourceTree = "<group>"; };
 		E5863F8F2CA9926E0092D6C1 /* TabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarView.swift; sourceTree = "<group>"; };
 		E5863F922CA994960092D6C1 /* HourlyForecastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyForecastView.swift; sourceTree = "<group>"; };
 		E5863F942CA994AC0092D6C1 /* HourlyForecastReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyForecastReducer.swift; sourceTree = "<group>"; };
@@ -67,13 +75,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E59A279C2CA923BC0050359C /* ComposableArchitecture in Frameworks */,
+				E542A8652CE1ECD800A3F83E /* RxMoya in Frameworks */,
+				E542A85F2CE1ECD800A3F83E /* CombineMoya in Frameworks */,
+				E542A8632CE1ECD800A3F83E /* ReactiveMoya in Frameworks */,
+				E542A8592CE1E8CD00A3F83E /* ComposableArchitecture in Frameworks */,
+				E542A8612CE1ECD800A3F83E /* Moya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E542A85A2CE1EC7300A3F83E /* TenDayForecastAPI */ = {
+			isa = PBXGroup;
+			children = (
+				E542A85B2CE1EC8A00A3F83E /* TenDayForecastAPI.swift */,
+				E542A8662CE1ED7600A3F83E /* TenDayForecastResponse.swift */,
+			);
+			path = TenDayForecastAPI;
+			sourceTree = "<group>";
+		};
 		E5863F912CA994750092D6C1 /* HourlyForecastView */ = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +107,7 @@
 		E5863FB12CB284C00092D6C1 /* TenDayForecastView */ = {
 			isa = PBXGroup;
 			children = (
+				E542A85A2CE1EC7300A3F83E /* TenDayForecastAPI */,
 				E5863FB22CB285010092D6C1 /* TenDayForecastView.swift */,
 				E5863FB42CB285110092D6C1 /* TenDayForecastReducer.swift */,
 			);
@@ -210,7 +232,11 @@
 			);
 			name = "SwiftUI-Weather";
 			packageProductDependencies = (
-				E59A279B2CA923BC0050359C /* ComposableArchitecture */,
+				E542A8582CE1E8CD00A3F83E /* ComposableArchitecture */,
+				E542A85E2CE1ECD800A3F83E /* CombineMoya */,
+				E542A8602CE1ECD800A3F83E /* Moya */,
+				E542A8622CE1ECD800A3F83E /* ReactiveMoya */,
+				E542A8642CE1ECD800A3F83E /* RxMoya */,
 			);
 			productName = "SwiftUI-Weather";
 			productReference = E59A27822CA91E940050359C /* SwiftUI-Weather.app */;
@@ -241,7 +267,8 @@
 			);
 			mainGroup = E59A27792CA91E940050359C;
 			packageReferences = (
-				E59A279A2CA923BC0050359C /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				E542A8572CE1E8CD00A3F83E /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				E542A85D2CE1ECD800A3F83E /* XCRemoteSwiftPackageReference "Moya" */,
 			);
 			productRefGroup = E59A27832CA91E940050359C /* Products */;
 			projectDirPath = "";
@@ -271,6 +298,7 @@
 			files = (
 				E5863F902CA9926E0092D6C1 /* TabbarView.swift in Sources */,
 				E59A27AA2CA925B60050359C /* HomeView.swift in Sources */,
+				E542A8672CE1ED7600A3F83E /* TenDayForecastResponse.swift in Sources */,
 				E59A27B22CA92FCC0050359C /* ListView.swift in Sources */,
 				E59A27B62CA933770050359C /* MapAction.swift in Sources */,
 				E59A27B82CA933880050359C /* MapReducer.swift in Sources */,
@@ -291,6 +319,7 @@
 				E59A27862CA91E940050359C /* SwiftUI_WeatherApp.swift in Sources */,
 				E59A27A82CA925AC0050359C /* HomeReducer.swift in Sources */,
 				E59A27AE2CA92FBB0050359C /* ListAction.swift in Sources */,
+				E542A85C2CE1EC8A00A3F83E /* TenDayForecastAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,21 +525,49 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		E59A279A2CA923BC0050359C /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+		E542A8572CE1E8CD00A3F83E /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.15.0;
+				minimumVersion = 1.15.2;
+			};
+		};
+		E542A85D2CE1ECD800A3F83E /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.3;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		E59A279B2CA923BC0050359C /* ComposableArchitecture */ = {
+		E542A8582CE1E8CD00A3F83E /* ComposableArchitecture */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = E59A279A2CA923BC0050359C /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			package = E542A8572CE1E8CD00A3F83E /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
 			productName = ComposableArchitecture;
+		};
+		E542A85E2CE1ECD800A3F83E /* CombineMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E542A85D2CE1ECD800A3F83E /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = CombineMoya;
+		};
+		E542A8602CE1ECD800A3F83E /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E542A85D2CE1ECD800A3F83E /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		E542A8622CE1ECD800A3F83E /* ReactiveMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E542A85D2CE1ECD800A3F83E /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = ReactiveMoya;
+		};
+		E542A8642CE1ECD800A3F83E /* RxMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E542A85D2CE1ECD800A3F83E /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = RxMoya;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

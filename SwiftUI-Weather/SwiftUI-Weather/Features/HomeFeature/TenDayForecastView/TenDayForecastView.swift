@@ -25,7 +25,7 @@ struct TenDayForecastView: View {
                     .padding(.bottom, 8)
 
                 VStack(spacing: 0) {
-                    ForEach(viewStore.dailyForecasts, id: \.self) { forecast in
+                    ForEach(viewStore.dailyForecasts, id: \.id) { forecast in
                         HStack {
                             Text(forecast.day)
                                 .font(.system(size: 20))
